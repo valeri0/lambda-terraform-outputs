@@ -10,3 +10,9 @@ variable "input_s3_bucket_name" {
   type        = string
   default     = ""
 }
+
+variable "lambda_outputs_parameter" {
+  description = "List of output names to be provided for the Lambda function to return from the terraform state file"
+  type        = list(string)
+  default     = []
+}
