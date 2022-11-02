@@ -30,8 +30,6 @@ is provided, then it will a return the following response:
 
 ```
 {
-Response
-{
   "statusCode": 200,
     "body": {
     "<specific_output_name>": {
