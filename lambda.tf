@@ -14,7 +14,6 @@ resource "aws_lambda_function" "test_lambda_function" {
   environment {
     variables = {
       "input_bucket" = var.input_s3_bucket_name
-      "outputs"      = jsonencode(var.lambda_outputs_parameter)
     }
   }
 }

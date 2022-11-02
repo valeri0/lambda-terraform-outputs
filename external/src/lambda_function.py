@@ -4,7 +4,7 @@ import os
 s3_client = boto3.client("s3")
 
 def lambda_handler(event, context):
-    desired_outputs = os.environ['outputs']
+    desired_outputs = event['outputs']
     bucket_name = os.environ['input_bucket']
     
     file_content = read_tfstate_file(bucket_name)
